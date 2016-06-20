@@ -128,6 +128,6 @@ A continuación veremos una tabla con esas diferencias:
 
 > Es importante tener en cuenta que todos los sabores de Kendo UI requieren la librería jQuery y la versión debe ser mayor o igual 1.9.1.
 
-Gracias por leer este HowTo
+Gracias por leer este HowTo.
 
 [@jramirezdev](https://github.com/jramirezdev)
