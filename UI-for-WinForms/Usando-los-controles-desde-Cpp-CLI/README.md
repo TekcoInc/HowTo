@@ -108,6 +108,6 @@ Hecho esto podemos iniciar el Windows Debugger, veremos el formulario, procedemo
 
 ![](http://jorgeramirez.ninja/content/images/2015/11/Capture16.PNG)
 
-Gracias por leer este HowTo
+Gracias por leer este HowTo.
 
 [@jramirezdev](https://github.com/jramirezdev)
