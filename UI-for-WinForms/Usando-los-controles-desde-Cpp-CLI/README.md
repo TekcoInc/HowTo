@@ -1,8 +1,8 @@
 ## Usando los controles desde C++/CLI
 
-¡Hola a tod@s!
-
-En este HowTo veremos cómo podemos trabajar con la suite UI for WinForms desde aplicaciones escritas con C++/CLI.
+Descripción | Nivel
+------------ | ------------
+En este HowTo veremos cómo podemos trabajar con la suite UI for WinForms desde aplicaciones escritas con C++/CLI. | Principiante
 
 Lo primero que debes hacer es instalar el paquete de los controles, para esto puedes ir al website de Telerik y descargar el instalador Universal, es un .exe con el cual se pueden instalar todos los productos de ellos, estos controles tienen un soporte bastante amplio para versiones del framework .NET y también de Visual Studio.
 
@@ -108,8 +108,6 @@ Hecho esto podemos iniciar el Windows Debugger, veremos el formulario, procedemo
 
 ![](http://jorgeramirez.ninja/content/images/2015/11/Capture16.PNG)
 
-Para finalizar, no olvides que Telerik cuenta con una amplia documentación en línea y muchos foros de soporte.
-
-Happy Coding++
+Gracias por leer este HowTo
 
 [@jramirezdev](https://github.com/jramirezdev)
