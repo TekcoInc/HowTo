@@ -207,6 +207,71 @@ Ahora agregaremos la vista para el detalle de la noticia.
 </div>
 ```
 
+Con esto hemos terminado de definir parcialmente lo que será la UI de nuestra aplicación, el paso siguiente es comenzar a crear la lógica que consultará el servicio REST, esta lógica la escribiremos en javascript haciendo uso del framework MVVM que contiene Kendo.
+
+Recordemos que cuando usamos MVVM lo común es crear un ViewModel por cada vista que tenga nuestra aplicación, para nuestro caso necesitamos 2, una para la vista Maestra y otro para la vista Detalle, si queremos podemos crear cada una en archivos javascript separados pero no esta mal que ambas estén en uno sólo, para nuestro caso crearemos un sólo archivo.
+
+Pasemos entonces a crear un archivo llamado `newsReaderViewModel.js`, una vez creado definiremos el ViewModel para la vista maestra.
+
+```javascript
+var newsReaderViewModel = kendo.observable({
+    newsListView: null,
+    newsReaderDS: new kendo.data.DataSource({
+        transport: {
+            read: {
+                url: "https://api.myjson.com/bins/3k7i8",
+                contentType: "application/json",
+                type: "GET",
+                dataType: "json"
+            }
+        },
+        schema: {
+            model: {
+                id: "id",
+                fields: {
+                    id: {
+                        type: "integer"
+                    },
+                    title: {
+                        type: "string"
+                    },
+                    content: {
+                        type: "string"
+                    },
+                    image: {
+                        type: "string"
+                    }
+                }
+            }
+        },
+        error: function(e) {
+            console.log("News DataSource Error: " + kendo.stringify(e));
+        }
+    })
+});
+```
+
+A continuación crearemos el ViewModel para la vista de detalle:
+
+```javascript
+var newsDetailViewModel = kendo.observable({
+    content: "",
+    imageUrl: "",
+    openModal: function (e) {
+        var link = e.target.context;
+        var dataContent = $(link).attr("data-content");
+        var dataImage = $(link).attr("data-image");
+
+        newsDetailViewModel.set("content", dataContent);
+        newsDetailViewModel.set("imageUrl", dataImage);
+    },
+    closeModal: function (e) {
+        var modalView = e.sender.element.closest("[data-role=modalview]").data("kendoMobileModalView");
+        modalView.close();
+    }
+});
+```
+
 ```html
 ```
 
