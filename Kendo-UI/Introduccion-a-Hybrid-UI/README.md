@@ -169,8 +169,23 @@ Si en este momento corremos la aplicación, podremos ver... ¡Nada!, esto se deb
 	</body>
 </html>
 ```
+En este momento si corremos la aplicación podremos ver el mensaje "Hola Mundo" además de algunos otros aspectos gráficos que Kendo Hybrid UI automáticamente coloca para mejorar la UI de nuestra aplicación.
+
+El propósito de esta aplicación es listar un conjunto de noticias provenientes de un servicio REST y al dar clic/tab en una, mostrar un modal con el detalle de la misma. De esta forma nuestra aplicación estará conformada por 2 vistas.
+
+Continuaremos modificando la vista `home` para incluir un widget que mostrará la lista de noticias
 
 ```html
+<div id="home" data-role="view" data-layout="default">
+
+<ul id="newsList" data-role="listview"></ul>
+</div>
+
+<script id="newsRowTemplate" type="text/x-kendo-template">
+	<ul>
+		<li><a href="\#detail" data-rel="modalview" data-role="button" data-content="#: content #" data-image="#: image #">#: title #</a></li>
+	</ul>
+</script>
 ```
 
 Gracias por leer este HowTo.
