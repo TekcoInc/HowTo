@@ -173,18 +173,41 @@ En este momento si corremos la aplicación podremos ver el mensaje "Hola Mundo" 
 
 El propósito de esta aplicación es listar un conjunto de noticias provenientes de un servicio REST y al dar clic/tab en una, mostrar un modal con el detalle de la misma. De esta forma nuestra aplicación estará conformada por 2 vistas.
 
-Continuaremos modificando la vista `home` para incluir un widget que mostrará la lista de noticias
+Continuaremos modificando la vista `home` para incluir un widget que mostrará la lista de noticias.
 
 ```html
 <div id="home" data-role="view" data-layout="default">
 	<ul id="newsList" data-role="listview"></ul>
-</div>
-
-<script id="newsRowTemplate" type="text/x-kendo-template">
+	
+	<script id="newsRowTemplate" type="text/x-kendo-template">
 	<ul>
 		<li><a href="\#detail" data-rel="modalview" data-role="button" data-content="#: content #" data-image="#: image #">#: title #</a></li>
 	</ul>
-</script>
+	</script>
+</div>
+```
+
+Ahora agregaremos la vista para el detalle de la noticia.
+
+```html
+<div id="detail" data-role="modalview">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a data-align="right" data-role="button">Cerrar</a>
+		</div>
+	</div>
+	<div>
+		<div>
+			<img class="alertimage"/>
+		</div>
+		<div class="listviewdiv">
+			<p class="item-info"></p>
+		</div>
+	</div>
+</div>
+```
+
+```html
 ```
 
 Gracias por leer este HowTo.
