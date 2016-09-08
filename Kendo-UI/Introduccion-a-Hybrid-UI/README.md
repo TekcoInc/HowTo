@@ -215,7 +215,6 @@ Pasemos entonces a crear un archivo llamado `newsReaderViewModel.js`, una vez cr
 
 ```javascript
 var newsReaderViewModel = kendo.observable({
-    newsListView: null,
     newsReaderDS: new kendo.data.DataSource({
         transport: {
             read: {
@@ -245,7 +244,7 @@ var newsReaderViewModel = kendo.observable({
             }
         },
         error: function(e) {
-            console.log("News DataSource Error: " + kendo.stringify(e));
+            console.log("newsReaderDS Error: " + kendo.stringify(e));
         }
     })
 });
@@ -272,7 +271,14 @@ var newsDetailViewModel = kendo.observable({
 });
 ```
 
+El paso siguiente es agregar la referencia al archivo javascript en nuestra página html, esto lo podemos hacer en el head:
+
 ```html
+<script src="newsReaderViewModel.js"></script>
+```
+
+```html
+
 ```
 
 Gracias por leer este HowTo.
