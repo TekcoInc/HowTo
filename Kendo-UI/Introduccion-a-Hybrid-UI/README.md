@@ -2,9 +2,7 @@
 
 Descripción | Nivel
 ------------ | ------------
-En este HowTo haremos un ejemplo básico con Kendo Hybrid UI. | Principiante
-
-*Lector de Noticias*
+En este HowTo haremos un aplicación Maestro-Detalle que lee noticias desde un servicio REST. | Principiante
 
 El primer paso para poder trabajar con Kendo Hybrid UI es colocar las referencias correspondintes para los estilos y las librería javascript, esto se puede realizar de dos formas:
 
