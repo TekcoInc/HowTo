@@ -177,7 +177,7 @@ Continuaremos modificando la vista `home` para incluir un widget que mostrará l
 
 ```html
 <div id="home" data-role="view" data-layout="default">
-	<ul id="newsList" data-role="listview"></ul>
+	<ul id="newsList" data-role="listview" data-template="newsRowTemplate"></ul>
 	
 	<script id="newsRowTemplate" type="text/x-kendo-template">
 		<ul>
@@ -275,6 +275,42 @@ El paso siguiente es agregar la referencia al archivo javascript en nuestra pág
 
 ```html
 <script src="newsReaderViewModel.js"></script>
+```
+
+Con la lógica ya definida el paso siguiente es retomar el html y agregar los atributos correspondientes para que el framework de MVVM pueda realizar los bindings correspondientes entre la UI y el ViewModel.
+
+La vista maestro se define de la siguiente forma:
+
+```html
+<div id="home" data-role="view" data-layout="default" data-model="newsReaderViewModel">
+	<ul id="newsList" data-role="listview" data-template="newsRowTemplate" data-bind="source: newsReaderDS"></ul>
+	
+	<script id="newsRowTemplate" type="text/x-kendo-template">
+		<ul>
+			<li><a data-rel="modalview" href="\#detail" data-content="#: content #" data-image="#: image #">#: title #</a></li>
+		</ul>
+	</script>
+</div>
+```
+
+La vista detalle se define de la siguiente forma:
+
+```html
+<div id="detail" data-role="modalview" data-model="newsDetailViewModel" data-bind="events: {beforeOpen: openModal}">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a data-align="right" data-role="button" data-bind="events: {click: closeModal}">Cerrar</a>
+		</div>
+	</div>
+	<div>
+		<div>
+			<img class="alertimage" data-bind="attr: { src: imageUrl }"/>
+		</div>
+		<div class="listviewdiv">
+			<p class="item-info" data-bind="text: content"></p>
+		</div>
+	</div>
+</div>
 ```
 
 ```html
