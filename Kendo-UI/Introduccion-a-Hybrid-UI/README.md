@@ -177,8 +177,7 @@ Continuaremos modificando la vista `home` para incluir un widget que mostrará l
 
 ```html
 <div id="home" data-role="view" data-layout="default">
-
-<ul id="newsList" data-role="listview"></ul>
+	<ul id="newsList" data-role="listview"></ul>
 </div>
 
 <script id="newsRowTemplate" type="text/x-kendo-template">
