@@ -7,6 +7,7 @@ En este HowTo haremos un ejemplo básico con Kendo Hybrid UI. | Principiante
 El primer paso para poder trabajar con Kendo Hybrid UI es colocar las referencias correspondintes para los estilos y las librería javascript, esto se puede realizar de dos formas:
 
 1) Descargar el paquete de Kendo y referenciar los archivos locales.
+
 2) Utilizar la red CDN de Telerik (requiere conexión a internet 100%).
 
 Sea cual sea la opción que elijamos debemos referenciar lo siguiente:
