@@ -180,9 +180,9 @@ Continuaremos modificando la vista `home` para incluir un widget que mostrará l
 	<ul id="newsList" data-role="listview"></ul>
 	
 	<script id="newsRowTemplate" type="text/x-kendo-template">
-	<ul>
-		<li><a href="\#detail" data-rel="modalview" data-role="button" data-content="#: content #" data-image="#: image #">#: title #</a></li>
-	</ul>
+		<ul>
+			<li><a data-rel="modalview" data-role="button" ></a></li>
+		</ul>
 	</script>
 </div>
 ```
