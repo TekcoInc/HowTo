@@ -124,6 +124,51 @@ Como podemos suponer el paso siguiente es crear una vista, como en cualquier otr
 
 Tanto las vistas como los layout deben tener un role y un id, de esta forma se podrá asociar el contenedor con su contenido. En el ejemplo anterior vemos que esto se logra con los atributos `data-role` y `data-id`.
 
+Si en este momento corremos la aplicación, podremos ver... ¡Nada!, esto se debe a que formalmente no hemos inicializado la aplicación para ser una aplicación Kendo Hybrid UI, la inicialización la logramos llamando una función de la librería de Kendo.
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.714/styles/kendo.mobile.all.min.css">
+
+		<script src="http://kendo.cdn.telerik.com/2016.2.714/js/jquery.min.js"></script>
+		<script src="http://kendo.cdn.telerik.com/2016.2.714/js/kendo.all.min.js"></script>
+		<script src="http://kendo.cdn.telerik.com/2016.2.714/js/cultures/kendo.culture.es-CO.min.js"></script>
+		<script src="http://kendo.cdn.telerik.com/2016.2.714/js/messages/kendo.messages.es-CO.min.js"></script>
+	</head>
+	<body>
+		<div id="home"
+			 data-role="view"
+			 data-layout="default">
+			 <p>Hola Mundo</p>
+		</div>
+		
+		<section data-role="layout" data-id="default">
+			<header data-role="header">
+				<div data-role="navbar">
+					<a data-role="button" data-align="left" data-icon="more"></a>
+					Lector de Noticias
+					<a data-role="button" data-align="right" data-icon="about"></a>
+				</div>
+			</header>
+			<!--El contenido de la vista será cargado acá-->
+			<footer data-role="footer">
+				<div data-role="tabstrip">
+					<a href="#home" data-icon="home">Inicio</a>
+				</div>
+			</footer>
+		</section>
+		
+		<script>
+			var app = new kendo.mobile.Application();
+		</script>
+	</body>
+</html>
+```
 
 ```html
 ```
