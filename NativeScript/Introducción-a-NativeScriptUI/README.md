@@ -8,6 +8,8 @@ Lo primero que necesitamos es tener lista la instalación de **NativeScript**, p
 
 ## Creación de la aplicación
 
+Lo primero, es crear la aplicación NativeScript, en este caso usando el template en blanco, posteriormente añadir el soporte para android:
+
 ```javascript
 tns create DemoNativeScriptUI --template tns-template-blank
 cd DemoNativeScriptUI
@@ -41,7 +43,7 @@ application.start({ moduleName: "main-page" });
 ## DockLayout
 
 * Navegar al archivo main-page.xml
-* Agregar el siguiente contenido dentro del elemento page:
+* Modificar el layout del elemento page con el siguiente código:
 
 ```xml
 <DockLayout width="210" height="210" style.backgroundColor="lightgray" stretchLastChild="false">
@@ -55,7 +57,7 @@ application.start({ moduleName: "main-page" });
 ## GridLayout
 
 * Navegar al archivo main-page.xml
-* Agregar el siguiente contenido dentro del elemento page:
+* Modificar el layout del elemento page con el siguiente código:
 
 ```xml
 <GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" 
@@ -73,7 +75,7 @@ application.start({ moduleName: "main-page" });
 ## StackLayout
 
 * Navegar al archivo main-page.xml
-* Agregar el siguiente contenido dentro del elemento page:
+* Modificar el layout del elemento page con el siguiente código:
 
 ```xml
 <StackLayout orientation="vertical" width="210" height="210" style.backgroundColor="lightgray">
@@ -87,7 +89,7 @@ application.start({ moduleName: "main-page" });
 ## WrapLayout
 
 * Navegar al archivo main-page.xml
-* Agregar el siguiente contenido dentro del elemento page:
+* Modificar el layout del elemento page con el siguiente código:
 
 ```xml
 <WrapLayout orientation="horizontal" width="210" height="210" style.backgroundColor="lightgray">
@@ -101,7 +103,8 @@ application.start({ moduleName: "main-page" });
 ## ActionBar
 
 * Navegar al archivo main-page.xml
-* Agregar el siguiente contenido dentro del elemento page y antes del layout:
+* Agregar el siguiente contenido dentro del elemento page y antes del layout, en este caso, se crea un ActionBar que tiene con el botón de share
+ y dos opciones adicionales que se muestra en un menú modal:
 
 ```xml
 <ActionBar title="NativeScript UI Basics">
@@ -114,7 +117,7 @@ application.start({ moduleName: "main-page" });
 </ActionBar>
 ```
 
-* Agregar en **app.js** el siguiente código JavaScript:
+* Agregar en **app.js** el siguiente código JavaScript el cual permite exponer las funciones que son relacionadas en los elementos del ActionBar:
 
 ```javascript
 var dialogs = require("ui/dialogs");
@@ -216,6 +219,14 @@ exports.onViewAll = onViewAll;
 exports.onShare = onShare;
 exports.buttonTap = buttonTap;
 exports.pageLoaded = pageLoaded;
+```
+
+* Finalmente, en el archivo **main-page.xml** en el elemento page agregar el siguiente atributo, el cual llama la función pageLoaded:
+
+```xml
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <!-- More XML Code -->
+</Page>
 ```
 
 ![Demo NativeScript WebView](http://res.cloudinary.com/julitogtu/image/upload/v1473368724/webview_yskxls.jpg)
