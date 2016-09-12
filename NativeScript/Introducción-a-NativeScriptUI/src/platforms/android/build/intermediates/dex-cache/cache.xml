@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\internal_impl-23.4.0_7e0acef6ff4fb8fcb4114614ac715ae5d15f7561.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-v4-23.4.0_8641c03a4928c9fbe88e84e3b4bd08acc368495a.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-appcompat-v7-23.4.0_6dc8dd81ad1aacd82dba6af92ba54956a40563b2.jar" />
+    </item>
+    <item
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\support-annotations-23.4.0_b389dfa4a551983d66802ba11e81ad48acfe026e.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-animated-vector-drawable-23.4.0_850aa25dd7f705ca5e688d3a76be1c0e1471bb0d.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\DemoLayout\binding-generator\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cd7dd3d8b3faa7a457003b040d45b12c7e268dc6">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\DemoLayout-binding-generator-unspecified_738e5c7e4d0de331adc74981cee683ebf8d0a7bc.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-vector-drawable-23.4.0_fe757d5bd1625cccaeef31beb59f0cc077dde6af.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="89f0a1f737477abeda61c0072529d5158b1ebe81">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\intermediates-exploded-aar-widgets-release_5ebeaed9d5b64ea7410d46d0f2574e5fc84e40cb.jar" />
+    </item>
+    <item
+        jar="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\exploded-aar\DemoLayout\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8c8ebc987f6538a65f5cfd308d5984746999d79">
+        <dex dex="F:\Demos\NativeScript\DemoLayout\platforms\android\build\intermediates\pre-dexed\F0\debug\DemoLayout-runtime-unspecified_bf9eb5b16c58d7d5e9aa035c5795ed17727a8f07.jar" />
+    </item>
+
+</items>

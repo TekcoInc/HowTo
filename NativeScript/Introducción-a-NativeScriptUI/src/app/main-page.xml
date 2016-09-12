@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+<ActionBar title="NativeScript UI Basics">
+  <ActionItem tap="onShare"
+      android.systemIcon="ic_menu_share" android.position="actionBar"/>
+  <ActionItem tap="onNew"
+      text="New item" android.position="popup"/>
+  <ActionItem tap="onViewAll"
+      text="View All" android.position="popup"/>
+</ActionBar>
+<GridLayout columns="*,auto" rows="auto, *" width="100%" height="100%" 
+    style.backgroundColor="lightgray" >
+    <TextView text="{{ pageurl }}" row="0" col="0" />
+    <Button col="1" tap="buttonTap" text="Load Page" />
+    <WebView src="{{ loadPage }}" row="1" colSpan="2"/>
+</GridLayout>
+</Page>
