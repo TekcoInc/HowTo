@@ -22,21 +22,21 @@ De esta forma entonces procederemos a crear un archivo .HTML y agregamos las ref
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
     <title>Mi formulario con Kendo UI MVVM</title>
     <meta charset="utf-8" />
-    
+
     <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
     <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
-
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/cultures/kendo.culture.es-CO.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/messages/kendo.messages.es-CO.min.js"></script>
+
+</head>
+<body>
     <script src="myViewModel.js"></script>
-	</head>
-	<body>
-	</body>
+</body>
 </html>
 ```
 Ahora definimos la estructura básica del formulario HTML.
@@ -54,8 +54,7 @@ Ahora definimos la estructura básica del formulario HTML.
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/cultures/kendo.culture.es-CO.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2016.3.914/js/messages/kendo.messages.es-CO.min.js"></script>
-    <script src="myViewModel.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2016.3.914/js/messages/kendo.messages.es-CO.min.js"></script>    
 </head>
 <body>
     <div class="form">
@@ -75,9 +74,10 @@ Ahora definimos la estructura básica del formulario HTML.
             <dt>&nbsp;</dt>
             <dd><button id="add" class="k-button">Agregar</button></dd>
         </dl>
-    </div>
-
-    <table id="gastos"></table>
+	<table id="gastos"></table>
+    </div>    
+    
+    <script src="myViewModel.js"></script>
 </body>
 </html>
 ```
@@ -129,8 +129,7 @@ Una vez agregado el listado en el ViewModel no es necesario que los elementos es
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/cultures/kendo.culture.es-CO.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2016.3.914/js/messages/kendo.messages.es-CO.min.js"></script>
-    <script src="myViewModel.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2016.3.914/js/messages/kendo.messages.es-CO.min.js"></script>    
 </head>
 <body>
     <div id="miFormulario" class="form">
@@ -146,9 +145,11 @@ Una vez agregado el listado en el ViewModel no es necesario que los elementos es
             <dt>&nbsp;</dt>
             <dd><button id="agregar" class="k-button">Agregar</button></dd>
         </dl>
+	
+	<table id="gastos"></table>
     </div>
-
-    <table id="gastos"></table>
+    
+    <script src="myViewModel.js"></script>
 </body>
 </html>
 ```
