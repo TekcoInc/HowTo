@@ -192,6 +192,22 @@ Aquí podemos observar dos nuevos atributos:
 
 Son asignados en este caso ya que son propiedades del Grid de Kendo.
 
+Para finalizar el ejemplo nos falta agregar la lógica de inserción de nuevos registros a la colección.
+
+```javascript
+    agregar: function (e) {
+        var list = this.get("gastosAgregados");
+        
+        list.push({
+            nombre: this.get("tipoDeGastoSeleccionado"),
+            valor: this.get("cantidadDigitada")
+        });
+
+        this.set("tipoDeGastoSeleccionado", "comida");
+        this.set("cantidadDigitada", 0);
+    }
+```
+
 Ejecuta la aplicación y prueba :)
 
 Gracias por leer este HowTo.
