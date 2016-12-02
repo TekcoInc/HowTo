@@ -25,6 +25,9 @@ De esta forma entonces procederemos a crear un archivo .HTML y agregamos las ref
 	<head>
     <title>Mi formulario con Kendo UI MVVM</title>
     <meta charset="utf-8" />
+    
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
 
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
@@ -44,6 +47,9 @@ Ahora definimos la estructura básica del formulario HTML.
 <head>
     <title>Mi formulario con Kendo UI MVVM</title>
     <meta charset="utf-8" />
+    
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
 
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
@@ -116,6 +122,9 @@ Una vez agregado el listado en el ViewModel no es necesario que los elementos es
 <head>
     <title>Mi formulario con Kendo UI MVVM</title>
     <meta charset="utf-8" />
+    
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2016.3.914/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
 
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
@@ -161,7 +170,7 @@ En este caso todos estos atributos son propios de Kendo UI, específicamente del
 Ahora realizaremos el binding para el input donde se ingresará la cantidad.
 
 ```html
-<input id="valor" type="text" class="k-textbox" data-role="numerictextbox" data-bind="value: cantidadDigitada" />
+<input id="valor" type="text" data-role="numerictextbox" data-bind="value: cantidadDigitada" />
 ```
 
 Aquí vemos que los "data-attributes" asignados fueron:
@@ -182,7 +191,7 @@ En este ejemplo podemos ver que no estamos creando ningún widget de Kendo, simp
 El último elemento que nos falta es un widget para mostrar los elementos que vamos agregando, para esto usaremos el widget Grid de Kendo.
 
 ```html
-<table id="gastos" data-role="grid" data-sortable="true" data-bind="source: gastosAgregados" data-columns='["Tipo Gasto", "Valor"]'></table>
+<table id="gastos" data-role="grid" data-sortable="true" data-bind="source: gastosAgregados" data-columns='["nombre", "valor"]'></table>
 ```
 
 Aquí podemos observar dos nuevos atributos:
