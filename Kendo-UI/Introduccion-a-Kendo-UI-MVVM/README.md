@@ -158,7 +158,39 @@ Aquí podemos notar los siguientes "data-attributes":
 
 En este caso todos estos atributos son propios de Kendo UI, específicamente del Widget DropDownList, pero pueden existir otros casos donde los atributos a los que se le hace binding sean nativos de HTML.
 
+Ahora realizaremos el binding para el input donde se ingresará la cantidad.
 
+```html
+<input id="valor" type="text" class="k-textbox" data-role="numerictextbox" data-bind="value: cantidadDigitada" />
+```
+
+Aquí vemos que los "data-attributes" asignados fueron:
+
+* data-role
+* data-bind
+
+Con la diferencia que ahora estamos creando un widget de tipo "numerictextbox" y asignando su propiedad "value".
+
+El siguiente elemento que nos falta enlazar es el botón, lo haremos de la siguiente forma:
+
+```html
+<button id="agregar" class="k-button" data-bind="click: agregar">Agregar</button>
+```
+
+En este ejemplo podemos ver que no estamos creando ningún widget de Kendo, simplemente hacemos binding al evento click del elemento "<button>" de HTML.
+
+El último elemento que nos falta es un widget para mostrar los elementos que vamos agregando, para esto usaremos el widget Grid de Kendo.
+
+```html
+<table id="gastos" data-role="grid" data-sortable="true" data-bind="source: gastosAgregados" data-columns='["Tipo Gasto", "Valor"]'></table>
+```
+
+Aquí podemos observar dos nuevos atributos:
+
+* data-sortable
+* data-columns
+
+Son asignados en este caso ya que son propiedades del Grid de Kendo.
 
 Ejecuta la aplicación y prueba :)
 
