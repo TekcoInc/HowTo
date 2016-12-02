@@ -1,4 +1,4 @@
-# Introducción a Hybrid UI
+# Introducción a Kendo UI MVVM
 
 Descripción | Nivel
 ------------ | ------------
